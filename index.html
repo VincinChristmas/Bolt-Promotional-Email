@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolt email · single column</title>
+  <!-- no media queries, pure inline css, hand-coded for email -->
+</head>
+<body style="margin:0; padding:0; background-color:#f4f4f4; font-family: Arial, Helvetica, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+  <!-- main table 100% background wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f4f4f4" style="background-color:#f4f4f4; margin:0; padding:0; border-collapse:collapse;">
+    <tr>
+      <td align="center" valign="top" style="padding:20px 0;">
+        <!-- single column container: max-width 600px, centered -->
+        <table width="100%" max-width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; margin:0 auto; background-color:#ffffff; border-collapse:collapse; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+          <tr>
+            <td align="center" valign="top" style="padding:0; background-color:#ffffff;">
+
+              <!-- 1) HEADER IMAGE : centered, full width of container -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
+                <tr>
+                  <td align="center" valign="top" style="padding:0; font-size:0; line-height:0;">
+                    <img src="https://via.placeholder.com/600x140/1e2b3c/ffffff?text=BOLT+HEADER" alt="Bolt Header" width="600" style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 2) SECOND IMAGE directly below header, centered -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
+                <tr>
+                  <td align="center" valign="top" style="padding:0; font-size:0; line-height:0;">
+                    <img src="https://via.placeholder.com/600x200/2c3e50/ffffff?text=hero+image" alt="Hero image" width="600" style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 3) TEXT COMPONENT (white bg, black text, left aligned) -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; background-color:#ffffff;">
+                <tr>
+                  <td align="left" valign="top" style="padding:30px 30px 10px 30px; background-color:#ffffff; color:#000000; font-family: Arial, Helvetica, sans-serif;">
+
+                    <!-- Welcome heading -->
+                    <h1 style="margin:0 0 20px 0; font-size:28px; line-height:1.2; font-weight:700; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">Welcome</h1>
+
+                    <!-- four paragraphs, left aligned, black -->
+                    <p style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <p style="margin:0 0 24px 0; font-size:16px; line-height:1.5; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                    </p>
+
+                    <!-- button "start building" white text on blue bg, centered? BUT component is left-aligned text, so button is left-aligned as well (common) -->
+                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse:separate; margin:8px 0 24px 0;">
+                      <tr>
+                        <td align="center" bgcolor="#0070f3" style="background-color:#0070f3; border-radius:6px; padding:12px 28px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:600; color:#ffffff; text-align:center; mso-line-height-rule:exactly;">
+                          <a href="#" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; font-size:16px; font-weight:600; font-family: Arial, Helvetica, sans-serif; letter-spacing:0.2px;">start building</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- clear float for button (though table left aligned, margin bottom handles) -->
+                    <div style="clear:both; font-size:0; line-height:0;">&nbsp;</div>
+
+                    <!-- closing and signature -->
+                    <p style="margin:16px 0 0 0; font-size:16px; line-height:1.5; color:#000000; font-family: Arial, Helvetica, sans-serif; text-align:left;">
+                      Happy building,<br>
+                      The Bolt Team
+                    </p>
+                    <div style="height:10px; font-size:0; line-height:0;">&nbsp;</div>
+                  </td>
+                </tr>
+              </table>
+              <!-- end text component -->
+
+              <!-- 4) FOOTER black background, everything centered -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#000000" style="border-collapse:collapse; background-color:#000000;">
+                <tr>
+                  <td align="center" valign="top" style="padding:30px 20px 20px 20px; background-color:#000000;">
+                    <!-- footer logo image centered -->
+                    <img src="https://via.placeholder.com/120x40/000000/ffffff?text=BOLT+LOGO" alt="Bolt logo" width="120" style="display:block; width:120px; max-width:120px; height:auto; border:0; outline:none; text-decoration:none; margin:0 auto 20px auto;" border="0">
+
+                    <!-- social media icons: twitter, linkedin, instagram (centered) -->
+                    <table cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; margin:0 auto 16px auto;">
+                      <tr>
+                        <!-- Twitter icon -->
+                        <td align="center" valign="middle" style="padding:0 12px;">
+                          <a href="#" target="_blank" style="text-decoration:none;">
+                            <img src="https://via.placeholder.com/28x28/000000/ffffff?text=T" alt="Twitter" width="28" height="28" style="display:block; width:28px; height:28px; border:0; outline:none; text-decoration:none;" border="0">
+                          </a>
+                        </td>
+                        <!-- LinkedIn icon -->
+                        <td align="center" valign="middle" style="padding:0 12px;">
+                          <a href="#" target="_blank" style="text-decoration:none;">
+                            <img src="https://via.placeholder.com/28x28/000000/ffffff?text=L" alt="LinkedIn" width="28" height="28" style="display:block; width:28px; height:28px; border:0; outline:none; text-decoration:none;" border="0">
+                          </a>
+                        </td>
+                        <!-- Instagram icon -->
+                        <td align="center" valign="middle" style="padding:0 12px;">
+                          <a href="#" target="_blank" style="text-decoration:none;">
+                            <img src="https://via.placeholder.com/28x28/000000/ffffff?text=I" alt="Instagram" width="28" height="28" style="display:block; width:28px; height:28px; border:0; outline:none; text-decoration:none;" border="0">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- company name -->
+                    <p style="margin:0 0 6px 0; font-size:16px; line-height:1.4; color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-weight:600; text-align:center;">
+                      Bolt
+                    </p>
+
+                    <!-- street address -->
+                    <p style="margin:0 0 4px 0; font-size:14px; line-height:1.5; color:#cccccc; font-family: Arial, Helvetica, sans-serif; text-align:center;">
+                      123 Market Street, Suite 400
+                    </p>
+
+                    <!-- city, state, country -->
+                    <p style="margin:0 0 16px 0; font-size:14px; line-height:1.5; color:#cccccc; font-family: Arial, Helvetica, sans-serif; text-align:center;">
+                      San Francisco, CA, USA
+                    </p>
+
+                    <!-- click to unsubscribe link (final part) -->
+                    <p style="margin:0; font-size:12px; line-height:1.5; text-align:center;">
+                      <a href="#" target="_blank" style="color:#ffffff; text-decoration:underline; font-family: Arial, Helvetica, sans-serif; font-size:12px;">click to unsubscribe</a>
+                    </p>
+                    <!-- extra tiny spacing -->
+                    <div style="height:6px; font-size:0; line-height:0;">&nbsp;</div>
+                  </td>
+                </tr>
+              </table>
+              <!-- end footer -->
+
+            </td>
+          </tr>
+        </table>
+        <!-- end single column container -->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
