@@ -9,41 +9,44 @@
 <body style="margin:0; padding:0; background-color:#f4f4f4; font-family: Arial, Helvetica, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
   <!--Email Preheader-->
   <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#f2f4f6;">
-    1/4 Welcome to Bolt. Let's build !
+    Welcome to Bolt. Let's build !
   </div>
   <!-- main table 100% background wrapper -->
   <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f4f4f4" style="background-color:#f4f4f4; margin:0; padding:0; border-collapse:collapse;">
     <tr>
       <td align="center" valign="top" style="padding:20px 0;">
         <!-- single column container: max-width 600px, centered -->
-        <table width="100%" max-width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; margin:0 auto; background-color:#ffffff; border-collapse:collapse; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+        <!-- FIX #2: removed invalid max-width attribute (kept the inline CSS) -->
+        <!-- FIX #9: added role="presentation" -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%; max-width:600px; margin:0 auto; background-color:#ffffff; border-collapse:collapse; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
           <tr>
             <td align="center" valign="top" style="padding:0; background-color:#ffffff;">
 
               <!-- 1) HEADER IMAGE : centered, full width of container -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
                 <tr>
-                  <td align="center" bgcolor="#000000" valign="top" style="padding:24px 24px; font-size:0; line-height:0; background-color: #000000;">
-                    <a href="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0JYRBDYNR0RJDV1Y0GTMADF.png" target="_blank">
-                    <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0JYRBDYNR0RJDV1Y0GTMADF.png" alt="Bolt.new" width="96" style="display:block; width:100%; max-width:96px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
-                  </a>
+                  <td align="center" bgcolor="#000000" valign="top" style="padding:24px 24px; font-size:0; line-height:0; background-color:#000000;">
+                    <a href="https://bolt.new/" target="_blank" style="text-decoration:none;">
+                      <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0JYRBDYNR0RJDV1Y0GTMADF.png" alt="Bolt.new" width="96" style="display:block; width:100%; max-width:96px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
+                    </a>
                   </td>
                 </tr>
               </table>
 
               <!-- 2) SECOND IMAGE directly below header, centered -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;">
                 <tr>
                   <td align="center" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <a href="https://bolt.new/?utm_campaign=Free+User+Onboarding+-+General+Track&utm_content=D0+-+Welcome+%28General+Free%29&utm_medium=email_action&utm_source=customer.io" target="_blank">
-                    <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M6H3S7G4N6CMMCT0RJFMQ19B.jpg" alt="Hero image" width="600" style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
+                    <!-- FIX #4: corrected <a> / <td> nesting (anchor now wraps only the image, closing tags in order) -->
+                    <a href="https://bolt.new/?utm_campaign=Free+User+Onboarding+-+General+Track&utm_content=D0+-+Welcome+%28General+Free%29&utm_medium=email_action&utm_source=customer.io" target="_blank" style="text-decoration:none;">
+                      <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M6H3S7G4N6CMMCT0RJFMQ19B.jpg" alt="Hero image" width="600" style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;" border="0">
+                    </a>
                   </td>
-                </a>
                 </tr>
               </table>
 
               <!-- 3) TEXT COMPONENT (white bg, black text, left aligned) -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; background-color:#ffffff;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; background-color:#ffffff;">
                 <tr>
                   <td align="left" valign="top" style="padding:30px 30px 10px 30px; background-color:#ffffff; color:#000000; font-family: Arial, Helvetica, sans-serif;">
 
@@ -63,22 +66,34 @@
                     <p style="margin:0 0 24px 0; font-size:16px; line-height:1.5; color:#1f2937; font-family: Arial, Helvetica, sans-serif; text-align:left;">
                       The first version is a starting point. Keep giving Bolt direction until it does what you need.
                     </p>
-
-                    <!-- button "start building" white text on blue bg, centered? BUT component is left-aligned text, so button is left-aligned as well (common) -->
-                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse:separate; margin:8px 0 24px 0;">
-                      <tr>
-                        <td align="center" bgcolor="#0070f3" style="background-color:#0070f3; border-radius:6px; padding:14px 28px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:600; color:#ffffff; text-align:center; mso-line-height-rule:exactly;">
-                          <a href="#" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; font-size:16px; font-weight:600; font-family: Arial, Helvetica, sans-serif; letter-spacing:0.2px;">Start building</a>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- clear float for button (though table left aligned, margin bottom handles) -->
-                    <div style="clear:both; font-size:0; line-height:0;">&nbsp;</div>
+<!-- BULLETPROOF BUTTON -->
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
+  href="https://bolt.new/?utm_campaign=Free+User+Onboarding+-+General+Track&utm_content=D0+-+Welcome+%28General+Free%29&utm_medium=email_action&utm_source=customer.io"
+  style="height:44px;v-text-anchor:middle;width:180px;"
+  arcsize="10%" stroke="f" fillcolor="#0070f3">
+  <w:anchorlock/>
+  <center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;">Start building</center>
+</v:roundrect>
+<!-- FIX #11: MSO-only spacer after VML button so Outlook honours the gap to the signature -->
+<br style="mso-special-character:line-break; line-height:24px;">&nbsp;
+<![endif]-->
+<!--[if !mso]><!-- -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse:separate; margin:8px 0 24px 0;">
+  <tr>
+    <td align="center" bgcolor="#0070f3" style="background-color:#0070f3; border-radius:6px; padding:14px 28px; font-family: Arial, Helvetica, sans-serif; font-size:16px; font-weight:600; color:#ffffff; text-align:center; line-height:1; mso-line-height-rule:exactly;">
+      <a href="https://bolt.new/?utm_campaign=Free+User+Onboarding+-+General+Track&utm_content=D0+-+Welcome+%28General+Free%29&utm_medium=email_action&utm_source=customer.io" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; font-size:16px; font-weight:600; font-family: Arial, Helvetica, sans-serif; letter-spacing:0.2px;">Start building</a>
+    </td>
+  </tr>
+</table>
+<!--<![endif]-->
+<div style="clear:both; font-size:0; line-height:0;">&nbsp;</div>
 
                     <!-- closing and signature -->
                     <p style="margin:4px 0 0 0; font-size:16px; line-height:1.5; color:#374151; font-family: Arial, Helvetica, sans-serif; text-align:left;">
                       Happy building,<br>
-                      The Bolt Team &#x26A1
+                      <!-- FIX #1: added missing semicolon to the character reference -->
+                      The Bolt Team &#x26A1;
                     </p>
                     <div style="height:10px; font-size:0; line-height:0;">&nbsp;</div>
                   </td>
@@ -87,54 +102,56 @@
               <!-- end text component -->
 
               <!-- 4) FOOTER black background, everything centered -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#000000" style="border-collapse:collapse; background-color:#000000;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#000000" style="border-collapse:collapse; background-color:#000000;">
                 <tr>
                   <td align="center" valign="top" style="padding:40px 36px 40px; background-color:#000000;">
                     <!-- footer logo image centered -->
-                      <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C7ZQGCC0PS8WFGWQRCR7.png" alt="Bolt.new" width="88" style="display:block; width:100%; max-width:88px; height:auto; border:0; outline:none; text-decoration:none; color:#8a8f96;" border="0">
-                     
-                    <!-- social media icons: twitter, linkedin, instagram (centered) -->
-                    <table cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; margin:0 auto;">
+                    <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C7ZQGCC0PS8WFGWQRCR7.png" alt="Bolt.new" width="88" style="display:block; width:100%; max-width:88px; height:auto; margin:0 auto 0 auto; border:0; outline:none; text-decoration:none; color:#8a8f96;" border="0">
+
+                    <!-- social media icons: Twitter (X), LinkedIn, Instagram (centered) -->
+                    <!-- FIX #10: normalized all icons to 20x20 and used consistent padding for visual alignment -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse; margin:0 auto;">
                       <tr>
-                        <!-- Twitter icon -->
+                        <!-- Twitter / X icon -->
                         <td align="center" valign="middle" style="padding:26px 12px;">
                           <a href="https://x.com/boltdotnew?utm_campaign=Free+User+Onboarding+-+General+Track&utm_content=D0+-+Welcome+%28General+Free%29&utm_medium=email_action&utm_source=customer.io" target="_blank" style="text-decoration:none;">
-                            <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C801MFSMJNWQ7A9GVXFM.png" alt="X" width="16" height="16" style="display:block; width:16px; height:16px; border:0; outline:none; text-decoration:none;" border="0">
+                            <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C801MFSMJNWQ7A9GVXFM.png" alt="X" width="20" height="20" style="display:block; width:20px; height:20px; border:0; outline:none; text-decoration:none;" border="0">
                           </a>
                         </td>
                         <!-- LinkedIn icon -->
                         <td align="center" valign="middle" style="padding:26px 12px;">
                           <a href="https://www.linkedin.com/company/boltdotnew/home/" target="_blank" style="text-decoration:none;">
-                            <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C8J3NTCFD4NV89K4SBJ2.png" alt="LinkedIn" width="16" height="16" style="display:block; width:16px; height:16px; border:0; outline:none; text-decoration:none;" border="0">
+                            <img src="https://userimg-assets.customeriomail.com/images/client-env-224051/01M0V1C8J3NTCFD4NV89K4SBJ2.png" alt="LinkedIn" width="20" height="20" style="display:block; width:20px; height:20px; border:0; outline:none; text-decoration:none;" border="0">
                           </a>
                         </td>
                         <!-- Instagram icon -->
                         <td align="center" valign="middle" style="padding:26px 12px;">
                           <a href="https://www.instagram.com/boltdotnew/?hl=en" target="_blank" style="text-decoration:none;">
-                            <img src="https://45403856.fs1.hubspotusercontent-na1.net/hubfs/45403856/email/cx-weekly/social-instagram.png" alt="Instagram" width="26" height="26" style="display:block; width:26px; height:26px; border:0; outline:none; text-decoration:none;" border="0">
+                            <img src="https://45403856.fs1.hubspotusercontent-na1.net/hubfs/45403856/email/cx-weekly/social-instagram.png" alt="Instagram" width="20" height="20" style="display:block; width:20px; height:20px; border:0; outline:none; text-decoration:none;" border="0">
                           </a>
                         </td>
                       </tr>
                     </table>
 
                     <!-- company name -->
-                    <p style="margin:0 0 6px 0; font-size:12px; line-height:1.8; color:#8a8f96; font-family: Arial, Helvetica, sans-serif; font-weight:600; text-align:center;">
+                    <p style="margin:0 0 6px 0; font-size:12px; line-height:1.8; color:#a8adb4; font-family: Arial, Helvetica, sans-serif; font-weight:600; text-align:center;">
                       StackBlitz, Inc.
                     </p>
 
                     <!-- street address -->
-                    <p style="margin:0 0 4px 0; font-size:14px; line-height:1.8; color:#8a8f96; font-family: Arial, Helvetica, sans-serif; text-align:center;">
+                    <p style="margin:0 0 4px 0; font-size:14px; line-height:1.8; color:#a8adb4; font-family: Arial, Helvetica, sans-serif; text-align:center;">
                       2443 Fillmore Street #380-16814
                     </p>
 
                     <!-- city, state, country -->
-                    <p style="margin:0 0 4px 0; font-size:12px; line-height:1.8; color:#8a8f96;font-family: Arial, Helvetica, sans-serif; text-align:center;">
+                    <p style="margin:0 0 4px 0; font-size:12px; line-height:1.8; color:#a8adb4; font-family: Arial, Helvetica, sans-serif; text-align:center;">
                       San Francisco, CA 94115, United States
                     </p>
 
                     <!-- click to unsubscribe link (final part) -->
-                    <p style="margin:0;  font-size:12px; line-height:1.8; text-align:center;">
-                      <a href="#" target="_blank" style="color:#8a8f96; text-decoration:underline; font-family: Arial, Helvetica, sans-serif; font-size:12px;">Click to unsubscribe</a>
+                    <!-- FIX #7: replaced href="#" with ESP merge tag (adjust to your provider's syntax) -->
+                    <p style="margin:0; font-size:12px; line-height:1.8; text-align:center;">
+                      <a href="<%unsubscribe_url%>" target="_blank" style="color:#a8adb4; text-decoration:underline; font-family: Arial, Helvetica, sans-serif; font-size:12px;">Click to unsubscribe</a>
                     </p>
                     <!-- extra tiny spacing -->
                     <div style="height:6px; font-size:0; line-height:0;">&nbsp;</div>
